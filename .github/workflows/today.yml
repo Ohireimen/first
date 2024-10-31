@@ -1,0 +1,22 @@
+name: shell commands
+
+on:
+    push:
+          branches: [ main ]
+              pull request:
+                    branches: [ main ]
+
+
+                    jobs:
+                        run-shell-commands:
+                                  runs-on: ubuntu-latest
+                                            steps:
+                                                          - name: checkout
+                                                                          uses: actions/checkout@v4
+                                                                                        - name: echo string
+                                                                                                        run: echo "mjk is the best"
+                                                                                                                      - name: multi line script
+                                                                                                                                      run: |
+                                                                                                                                            whoami
+                                                                                                                                                            pwd
+                                                                                                                                                                            node -v
