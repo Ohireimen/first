@@ -2,9 +2,7 @@ name: shell commands
 
 on:
     push:
-          branches: [ main ]
-              pull request:
-                    branches: [ main ]
+    pull request:
 
 
                     jobs:
